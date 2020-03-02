@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Exposiciones</title>
+    <link href="https://fonts.googleapis.com/css?family=Spartan&display=swap" rel="stylesheet">
+    <style type="text/css">
+        :root{
+            --azul: azure;
+            --tostado: beige;
+            --rosa: bisque;
+            --rosita: antiquewhite;
+            
+        }
+        +{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: 'Spartan'; 
+        }
+        .container{
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: repeat(4, 250px);
+        }
+        .expo{
+            font-weight: 2em;
+            overflow: hidden;
+        }
+        .expo img{
+            object-fit: cover;
+            object-position: center center;
+            height: 100%;
+            width: 100%;
+        }
+        .ex1{
+            background-color: var(--rosa);
+            color: black;
+        }
+        .ex4{
+            background-color: var(--rosita);
+            color: black;
+        }
+        .ex5{
+            background-color: var(--tostado);
+            color: black;
+        }
+        .ex8{
+            background-color: var(--azul);
+            color: black;
+        }
+        .ex1, .ex4, .ex5, .ex8{
+            grid-column: span 2;
+            padding: 2em 4em;
+            display: flex;
+            flex-direction: column;
+        }
+        .ex2, .ex3, .ex6, .ex7{
+            grid-column: span 3;
+        }
+        h1{
+            font-size: 1.5em;
+            line-height: 1.5em;
+            flex-grow: 1;
+        }
+        h2{
+            font-size: 0.8em;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="expo ex1">
+            <h1>Carla Fuentes "El lápiz que ilustra una generación"</h1>
+            <h2>Museo Gugenhein, Bilbao. 1/01/2020 - 19/03/2020</h2>
+        </div>
+        <div class="expo ex2">
+            <img src="img/Carla%20fuentes.jpg">
+        </div>
+        <div class="expo ex3">
+            <img src="img/MartaMas.jpg">
+        </div>
+        <div class="expo ex4">
+            <h1>Leentrelineas. "Una fotografía más humana"</h1>
+            <h2>MACBA, Barcelona. 07/03/2020 - 19/05/2020</h2>
+        </div>
+        <div class="expo ex5">
+            <h1>Susana Blasco. "Necesitamos desconectar del ordenador y hacer cosas con las manos"</h1>
+            <h2>Museo Sorolla, Madrid. 13/06/2020 - 28/07/2020</h2>
+        </div>
+        <div class="expo ex6">
+            <img src="img/Susana%20Blasco.jpg">
+        </div>
+        <div class="expo ex7">
+            <img src="img/kERRATURE.jpg">
+        </div>
+        <div class="expo ex8">
+            <h1>Kerrature. "Repicar-se el pit i que el cor s’ompli de dibuixos".</h1>
+            <h2>Casa Museu Benlliure, Valencia. 20/07/2020 - 25/08/2020</h2>
+        </div>
+    </div>
+</body>
+</html>
